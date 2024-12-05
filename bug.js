@@ -1,0 +1,1 @@
+In React Router Dom v6, attempting to access the `location` object from within a component not directly rendered by a `<Route>` can result in unexpected behavior.  The `useLocation` hook is designed to only function within route components. Accessing `location` directly outside this context will return an outdated or undefined value, causing issues like stale data or errors.
